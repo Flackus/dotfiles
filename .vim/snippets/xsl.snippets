@@ -1,0 +1,108 @@
+snippet shit
+	<xsl:stylesheet version="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+		${1}
+
+	</xsl:stylesheet>
+snippet out
+	<xsl:output 
+		method="x:xhtml"
+		omit-xml-declaration="yes"
+		encoding="utf-8"
+		indent="no"
+		media-type="text/html; charset=utf-8"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"/> 
+snippet nslego
+	xmlns:lego="https://lego.yandex-team.ru"
+snippet nsx
+	xmlns:x="http://www.yandex.ru/xscript"
+snippet exclude
+	exclude-result-prefixes="${1}"
+snippet import
+	<xsl:import href="${1}"/>
+snippet include
+	<xsl:import href="${1}"/>
+snippet identity
+	<xsl:template match="@* | node()" name="identity">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()"/>
+		</xsl:copy>
+	</xsl:template>
+snippet apply
+	<xsl:apply-templates select="${1}"/>
+snippet applym
+	<xsl:apply-templates select="${1}" mode="${2}"/>
+snippet applyp
+	<xsl:apply-templates select="${1}">
+		<xsl:with-param name="${2}" select="${3}"/>
+	</xsl:apply-templates>
+snippet applymp
+	<xsl:apply-templates select="${1}" mode="${2}">
+		<xsl:with-param name="${3}" select="${4}"/>
+	</xsl:apply-templates>
+snippet attr
+	<xsl:attribute name="${1}">
+		${2}
+	</xsl:attribute>
+snippet copy
+	<xsl:copy>
+		${1}
+	</xsl:copy>
+snippet call
+	<xsl:call-template name="${1}"/>
+snippet callp
+	<xsl:call-template name="${1}">
+		<xsl:with-param name="${2}" select="${3}"/>
+	</xsl:call-template>
+snippet choose
+	<xsl:choose>
+		<xsl:when test="${1}">
+			${2}
+		</xsl:when>
+		<xsl:otherwise>
+			${3}
+		</xsl:otherwise>
+	</xsl:choose>
+snippet sort
+	<xsl:sort select="${1}"/>
+snippet if
+	<xsl:if test="${1}">
+		${2}		
+	</xsl:if>
+snippet temp
+	<xsl:template match="${1}">
+		${2}
+	</xsl:template>
+snippet tempm
+	<xsl:template match="${1}" mode="{$2}">
+		${3}
+	</xsl:template>
+snippet tempn
+	<xsl:template name="${1}">
+		${2}
+	</xsl:template>
+snippet param 
+	<xsl:param name="${1}" select="${2}"/>
+snippet with
+	<xsl:with-param name="${1}" select="${2}"/>
+snippet when
+	<xsl:when test="${1}">
+		${2}
+	</xsl:when>
+snippet key
+	<xsl:key name="${1}" match="${2}" use="${3}"/>
+snippet var
+	<xsl:variable name="${1}" select="${2}"/>
+snippet varr
+	<xsl:variable name="${1}">
+		${2}
+	</xsl:variable>
+snippet doe
+	disable-output-escaping="yes"
+snippet value
+	<xsl:value-of select="${1}"/>
+snippet te
+	<xsl:text>${1}</xsl:text>
+snippet ke
+	key('${1}', ${2})
