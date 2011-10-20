@@ -28,9 +28,3 @@ colorscheme desert
 " for snipMate
 filetype plugin on
 au BufNewFile,BufRead *.xsl set filetype=xsl.html
-
-"if version >= 540
-"augroup filetype
- "   autocmd FileType xml '[,']!xsltproc indent.xsl %
-"augroup END
-"endif
