@@ -25,6 +25,9 @@ set showmatch
 set incsearch
 " colors
 colorscheme desert
+" encoding
+set encoding=utf-8
+set fileencodings=utf-8
 " for snipMate
 filetype plugin on
 au BufNewFile,BufRead *.xsl set filetype=xsl.html
