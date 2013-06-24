@@ -1,0 +1,25 @@
+[user]
+    name = Alexey Rybakov
+    email = alexrybakov@yandex.ru
+[core]
+    editor = vim
+[merge]
+    tool = vimdiff
+[push]
+    default = current
+[alias]
+    st = status
+    sa = stash apply
+    sp = stash pop
+    df = diff
+    dc = diff --cached
+    cm = commit -m
+    cam = commit -am
+    co = checkout
+    me = merge
+    pu = push
+    pl = pull
+    pb = pull --rebase
+    re = reset
+    rh = reset HEAD
+    rb = rebase
