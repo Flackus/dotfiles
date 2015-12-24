@@ -34,6 +34,7 @@
     rb4 = rebase -i HEAD~4
     rb5 = rebase -i HEAD~5
     rb6 = rebase -i HEAD~6
+    last = show HEAD
 [color]
     ui = auto
     branch = auto
