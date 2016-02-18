@@ -1,3 +1,4 @@
+syntax on
 " copy/paste
 set clipboard=unnamed
 " sets backup destination dir

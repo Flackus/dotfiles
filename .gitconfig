@@ -22,6 +22,7 @@
     fo = fetch origin
     todev = "!git fo && git co dev && git pull"
     rbdev = "!git fo && git rb origin/dev"
+    fix = "!git cam 'fix'"
     fresh = clean -xdf
     pl = pull
     plr = pull --rebase
@@ -52,3 +53,10 @@
 [color "status"]
     added = yellow
     changed = green
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge --skip %f
+[lfs]
+    batch = true
+    concurrenttransfers = 15
