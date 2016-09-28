@@ -3,7 +3,7 @@
 source $HOME/.dotfiles/.exports
 source $HOME/.dotfiles/.aliases
 
-readonly git_completion=/usr/local/git/contrib/completion/git-completion.bash
+git_completion=/usr/local/git/contrib/completion/git-completion.bash
 [ -s "$git_completion" ] && source "$git_completion"
 
 # changes xterm title

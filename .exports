@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/.npm-packages/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH:$HOME/.npm-packages/bin:$HOME/yatool"
 export EDITOR="vim"
 export PAGER=less
 export CLICOLOR=1
@@ -8,6 +8,3 @@ export GREP_COLOR='1;33'
 export LC_ALL='ru_RU.UTF-8'
 export HISTSIZE=2000
 export HISTFILESIZE=$HISTSIZE
-#export HISTCONTROL=ignoredups
-#export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home

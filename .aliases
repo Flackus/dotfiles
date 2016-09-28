@@ -6,6 +6,8 @@ alias gti="git"
 alias change="git cam 'changelog updated'"
 alias githome="git config --global user.email 'alexrybakov@yandex.ru' && git config --get user.email"
 alias gitwork="git config --global user.email 'flack@yandex-team.ru' && git config --get user.email"
+alias herm="hermione/node_modules/.bin/hermione"
+alias gemi="gemini/node_modules/.bin/gemini"
 
 # Reload .bashrc
 alias refresh='. ~/.bashrc'
