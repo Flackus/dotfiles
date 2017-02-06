@@ -8,3 +8,5 @@ export GREP_COLOR='1;33'
 export LC_ALL='ru_RU.UTF-8'
 export HISTSIZE=2000
 export HISTFILESIZE=$HISTSIZE
+
+export PS1="[\u@\h \W]\\$ "
